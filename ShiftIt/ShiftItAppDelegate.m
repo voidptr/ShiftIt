@@ -288,6 +288,23 @@ NSDictionary *allShiftActions = nil;
 	[dict setObject:bl forKey:[bl identifier]];
 	ShiftItAction *br = [[ShiftItAction alloc] initWithIdentifier:@"br" label:@"Bottom Right" uiTag:8 action:&ShiftIt_BottomRight];
 	[dict setObject:br forKey:[br identifier]];
+
+  ShiftItAction *left13 = [[ShiftItAction alloc] initWithIdentifier:@"left13" label:@"Left 1/3rd" uiTag:11 action:&ShiftIt_Left_One_Third];
+	[dict setObject:left13 forKey:[left13 identifier]];
+  ShiftItAction *left23 = [[ShiftItAction alloc] initWithIdentifier:@"left23" label:@"Left 2/3rds" uiTag:12 action:&ShiftIt_Left_Two_Thirds];
+	[dict setObject:left23 forKey:[left23 identifier]];
+  ShiftItAction *middle13 = [[ShiftItAction alloc] initWithIdentifier:@"middle13" label:@"Middle 1/3rd" uiTag:13 action:&ShiftIt_Middle_One_Third];
+	[dict setObject:middle13 forKey:[middle13 identifier]];  
+  ShiftItAction *right23 = [[ShiftItAction alloc] initWithIdentifier:@"right23" label:@"Right 2/3rds" uiTag:14 action:&ShiftIt_Right_Two_Thirds];
+	[dict setObject:right23 forKey:[right23 identifier]];
+  ShiftItAction *right13 = [[ShiftItAction alloc] initWithIdentifier:@"right13" label:@"Right 1/3rd" uiTag:15 action:&ShiftIt_Right_One_Third];
+	[dict setObject:right13 forKey:[right13 identifier]];
+  
+  ShiftItAction *bl14 = [[ShiftItAction alloc] initWithIdentifier:@"bl14" label:@"Bottom Left 1/8th" uiTag:16 action:&ShiftIt_BottomLeft_One_Quarter];
+	[dict setObject:bl14 forKey:[bl14 identifier]];
+	ShiftItAction *br14 = [[ShiftItAction alloc] initWithIdentifier:@"br14" label:@"Bottom Right 1/8th" uiTag:17 action:&ShiftIt_BottomRight_One_Quarter];
+	[dict setObject:br14 forKey:[br14 identifier]];
+  
 	ShiftItAction *fullscreen = [[ShiftItAction alloc] initWithIdentifier:@"fullscreen" label:@"Full Screen" uiTag:9 action:&ShiftIt_FullScreen];
 	[dict setObject:fullscreen forKey:[fullscreen identifier]];
 	ShiftItAction *center = [[ShiftItAction alloc] initWithIdentifier:@"center" label:@"Center" uiTag:10 action:&ShiftIt_Center];

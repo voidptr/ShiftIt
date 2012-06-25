@@ -29,3 +29,11 @@ NSRect ShiftIt_BottomLeft(NSSize screenSize, NSRect windowRect);
 NSRect ShiftIt_BottomRight(NSSize screenSize, NSRect windowRect);
 NSRect ShiftIt_FullScreen(NSSize screenSize, NSRect windowRect);
 NSRect ShiftIt_Center(NSSize screenSize, NSRect windowRect);
+
+NSRect ShiftIt_Left_One_Third(NSSize screenSize, NSRect windowRect);
+NSRect ShiftIt_Left_Two_Thirds(NSSize screenSize, NSRect windowRect);
+NSRect ShiftIt_Middle_One_Third(NSSize screenSize, NSRect windowRect);
+NSRect ShiftIt_Right_Two_Thirds(NSSize screenSize, NSRect windowRect);
+NSRect ShiftIt_Right_One_Third(NSSize screenSize, NSRect windowRect);
+NSRect ShiftIt_BottomLeft_One_Quarter(NSSize screenSize, NSRect windowRect);
+NSRect ShiftIt_BottomRight_One_Quarter(NSSize screenSize, NSRect windowRect);

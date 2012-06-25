@@ -68,6 +68,63 @@ NSRect ShiftIt_Bottom(NSSize screenSize, NSRect windowRect) {
 	return r;
 }
 
+NSRect ShiftIt_Left_One_Third(NSSize screenSize, NSRect windowRect) {
+  NSRect r;
+  
+  r.origin.x = 0;
+  r.origin.y = 0;
+  
+  r.size.width = screenSize.width / 3;
+  r.size.height = screenSize.height;
+  
+  return r;
+}
+
+NSRect ShiftIt_Left_Two_Thirds(NSSize screenSize, NSRect windowRect) {
+  NSRect r;
+  
+  r.origin.x = 0;
+  r.origin.y = 0;
+  
+  r.size.width = 2 * screenSize.width / 3;
+  r.size.height = screenSize.height;
+  
+  return r;
+}
+
+NSRect ShiftIt_Middle_One_Third(NSSize screenSize, NSRect windowRect) {
+  NSRect r;
+  
+  r.origin.x = screenSize.width / 3;
+  r.origin.y = 0;
+  
+  r.size.width = screenSize.width / 3;
+  r.size.height = screenSize.height;
+  return r;
+}
+
+NSRect ShiftIt_Right_Two_Thirds(NSSize screenSize, NSRect windowRect) {
+  NSRect r;
+  
+  r.origin.x = screenSize.width / 3;
+  r.origin.y = 0;
+  
+  r.size.width = 2 * screenSize.width / 3;
+  r.size.height = screenSize.height;
+  return r;
+}
+
+NSRect ShiftIt_Right_One_Third(NSSize screenSize, NSRect windowRect) {
+  NSRect r;
+  
+  r.origin.x = 2 * screenSize.width / 3;
+  r.origin.y = 0;
+  
+  r.size.width = screenSize.width / 3;
+  r.size.height = screenSize.height;
+  return r;
+}
+
 NSRect ShiftIt_TopLeft(NSSize screenSize, NSRect windowRect) {
 	NSRect r;
 	
@@ -112,6 +169,30 @@ NSRect ShiftIt_BottomRight(NSSize screenSize, NSRect windowRect) {
 	
 	r.size.width = screenSize.width / 2;
 	r.size.height = screenSize.height / 2;
+	
+	return r;
+}
+
+NSRect ShiftIt_BottomLeft_One_Quarter(NSSize screenSize, NSRect windowRect) {
+	NSRect r;
+	
+	r.origin.x = 0;
+	r.origin.y = 3 * screenSize.height / 4;
+	
+	r.size.width = screenSize.width / 2;
+	r.size.height = screenSize.height / 4;
+	
+	return r;
+}
+
+NSRect ShiftIt_BottomRight_One_Quarter(NSSize screenSize, NSRect windowRect) {
+	NSRect r;
+	
+	r.origin.x = screenSize.width / 2;
+	r.origin.y = 3 * screenSize.height / 4;
+	
+	r.size.width = screenSize.width / 2;
+	r.size.height = screenSize.height / 4;
 	
 	return r;
 }
